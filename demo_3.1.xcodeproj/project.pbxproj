@@ -20,6 +20,8 @@
 		B1C703E2258E6CD40084A492 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C703E1258E6CD40084A492 /* Calculator.m */; };
 		B1C703EB258E6D770084A492 /* btnView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C703EA258E6D770084A492 /* btnView.m */; };
 		B1F16FAD2592FF570020FD17 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F16FAC2592FF570020FD17 /* SecondViewController.m */; };
+		B1F16FB3259339FA0020FD17 /* Calculator+Health.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F16FB2259339FA0020FD17 /* Calculator+Health.m */; };
+		B1F16FB9259341650020FD17 /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F16FB8259341650020FD17 /* HealthViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		B1C703EA258E6D770084A492 /* btnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = btnView.m; sourceTree = "<group>"; };
 		B1F16FAB2592FF570020FD17 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B1F16FAC2592FF570020FD17 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		B1F16FB1259339FA0020FD17 /* Calculator+Health.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Calculator+Health.h"; path = "model/Calculator+Health.h"; sourceTree = "<group>"; };
+		B1F16FB2259339FA0020FD17 /* Calculator+Health.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Calculator+Health.m"; path = "model/Calculator+Health.m"; sourceTree = "<group>"; };
+		B1F16FB7259341650020FD17 /* HealthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
+		B1F16FB8259341650020FD17 /* HealthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,10 @@
 				B1C703EA258E6D770084A492 /* btnView.m */,
 				B1F16FAB2592FF570020FD17 /* SecondViewController.h */,
 				B1F16FAC2592FF570020FD17 /* SecondViewController.m */,
+				B1F16FB1259339FA0020FD17 /* Calculator+Health.h */,
+				B1F16FB2259339FA0020FD17 /* Calculator+Health.m */,
+				B1F16FB7259341650020FD17 /* HealthViewController.h */,
+				B1F16FB8259341650020FD17 /* HealthViewController.m */,
 			);
 			path = demo_3.1;
 			sourceTree = "<group>";
@@ -299,8 +309,10 @@
 				B1C703A1258E6B060084A492 /* AppDelegate.m in Sources */,
 				B1C703B2258E6B0A0084A492 /* main.m in Sources */,
 				B1F16FAD2592FF570020FD17 /* SecondViewController.m in Sources */,
+				B1F16FB3259339FA0020FD17 /* Calculator+Health.m in Sources */,
 				B1C703A4258E6B060084A492 /* SceneDelegate.m in Sources */,
 				B1C703E2258E6CD40084A492 /* Calculator.m in Sources */,
+				B1F16FB9259341650020FD17 /* HealthViewController.m in Sources */,
 				B1C703EB258E6D770084A492 /* btnView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

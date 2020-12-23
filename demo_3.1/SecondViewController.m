@@ -43,6 +43,7 @@
             break;
         case 5:
             self.cal.disp = [NSMutableString stringWithString:[self.cal sqrt:[self.cal computedRestult]]];
+            //self.cal.screen = self.cal.disp 这样写会导致删除的时候数组越界，因为此时disp和screen地址相同
             self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
             self.txtdisplay.text = self.cal.screen;
             break;
@@ -54,7 +55,7 @@
     
 }
 
--(void)viewWillAppear:(BOOL)animated{
+- (void)viewWillAppear:(BOOL)animated{
     self.txtdisplay.text = self.cal.screen;
 }
 
