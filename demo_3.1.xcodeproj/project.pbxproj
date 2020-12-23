@@ -19,6 +19,7 @@
 		B1C703C7258E6B0A0084A492 /* demo_3_1UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C703C6258E6B0A0084A492 /* demo_3_1UITests.m */; };
 		B1C703E2258E6CD40084A492 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C703E1258E6CD40084A492 /* Calculator.m */; };
 		B1C703EB258E6D770084A492 /* btnView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C703EA258E6D770084A492 /* btnView.m */; };
+		B1F16FAD2592FF570020FD17 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F16FAC2592FF570020FD17 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		B1C703E1258E6CD40084A492 /* Calculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		B1C703E9258E6D770084A492 /* btnView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = btnView.h; sourceTree = "<group>"; };
 		B1C703EA258E6D770084A492 /* btnView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = btnView.m; sourceTree = "<group>"; };
+		B1F16FAB2592FF570020FD17 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B1F16FAC2592FF570020FD17 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				B1C703B1258E6B0A0084A492 /* main.m */,
 				B1C703E9258E6D770084A492 /* btnView.h */,
 				B1C703EA258E6D770084A492 /* btnView.m */,
+				B1F16FAB2592FF570020FD17 /* SecondViewController.h */,
+				B1F16FAC2592FF570020FD17 /* SecondViewController.m */,
 			);
 			path = demo_3.1;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 				B1C703A7258E6B060084A492 /* ViewController.m in Sources */,
 				B1C703A1258E6B060084A492 /* AppDelegate.m in Sources */,
 				B1C703B2258E6B0A0084A492 /* main.m in Sources */,
+				B1F16FAD2592FF570020FD17 /* SecondViewController.m in Sources */,
 				B1C703A4258E6B060084A492 /* SceneDelegate.m in Sources */,
 				B1C703E2258E6CD40084A492 /* Calculator.m in Sources */,
 				B1C703EB258E6D770084A492 /* btnView.m in Sources */,

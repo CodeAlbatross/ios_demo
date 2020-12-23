@@ -6,7 +6,9 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 #import "Calculator.h"
+#import "advancedCalculator.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *txtdisplay;
@@ -26,7 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnMult;
 @property (weak, nonatomic) IBOutlet UIButton *btnAdd;
 
-@property(strong, nonatomic) Calculator *cal;
+@property(strong, nonatomic) advancedCalculator *cal;
 
 @end
 
@@ -44,6 +46,7 @@
     
     [str appendString:[[sender titleLabel] text]];
     //NSLog(str);
+    self.cal.screen = str;
     self.txtdisplay.text = str;
 }
 
@@ -52,29 +55,40 @@
     [self.cal cleardisp];
 }
 
-- (IBAction)delNumber:(UIButton *)sender {
-    long len = self.cal.disp.length - 1;
-    if (len >= 0) {
-        [self.cal.disp deleteCharactersInRange:NSMakeRange(len, 1)];
-        self.txtdisplay.text = self.cal.disp;
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    //把advance对象传递给第二个场景
+    if ([segue.identifier isEqualToString:@"SecondScence"]) {
+        if ([segue.destinationViewController isKindOfClass:[SecondViewController class]]) {
+            SecondViewController *svc = (SecondViewController *)segue.destinationViewController;
+            svc.cal = self.cal;
+        }
     }
+}
+
+-(void) viewWillAppear:(BOOL)animated{
+    self.txtdisplay.text = self.cal.screen;
+}
+
+- (IBAction)delNumber:(UIButton *)sender {
     [self.cal delNumber];
+    self.txtdisplay.text = self.cal.screen;
 }
 
 - (IBAction)compute:(UIButton *)sender {
     self.txtdisplay.text = self.cal.computedRestult;
+    self.cal.screen = [NSMutableString stringWithString:self.txtdisplay.text];
 }
 
 -(Calculator*)cal{
     if (!_cal) {
-        _cal = [[Calculator alloc] init];
+        _cal = [[advancedCalculator alloc] init];
     }
     return _cal;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.cal = [[Calculator alloc] init];
+    self.cal = [[advancedCalculator alloc] init];
     // Do any additional setup after loading the view.
 }
 

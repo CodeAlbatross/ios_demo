@@ -17,11 +17,13 @@
 }
 
 -(void)delNumber{
-    long len = self.disp.length - 1;
+    long len = self.screen.length - 1;
+    //NSLog(@"字符串长度：%ld", self.disp.length-1);
     if (len >= 0) {
         //字符串表达式
         [self.disp deleteCharactersInRange:NSMakeRange(len, 1)];
         //屏幕上显示的字符串
+        //NSLog(@"screen长度：%ld", self.screen.length - 1);
         [self.screen deleteCharactersInRange:NSMakeRange(len, 1)];
     }
 }
