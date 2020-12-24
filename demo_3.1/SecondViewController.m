@@ -40,6 +40,9 @@
             break;
         }
         case 4:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal abs:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
             break;
         case 5:
             self.cal.disp = [NSMutableString stringWithString:[self.cal sqrt:[self.cal computedRestult]]];
@@ -48,6 +51,74 @@
             self.txtdisplay.text = self.cal.screen;
             break;
         case 6:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal reciprocal:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 7:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal square:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 8:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal sin:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 9:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal cos:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 10:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal tan:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 11:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal cubed:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 12:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal asin:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 13:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal acos:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 14:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal atan:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 15:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal ln:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 16:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal sinh:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 17:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal cosh:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 18:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal tanh:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
+            break;
+        case 19:
+            self.cal.disp = [NSMutableString stringWithString:[self.cal log:[self.cal computedRestult]]];
+            self.cal.screen = [NSMutableString stringWithString:self.cal.disp];
+            self.txtdisplay.text = self.cal.screen;
             break;
         default:
             break;
