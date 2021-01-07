@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bxp-Be-gCe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xeu-B6-cRz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -8,10 +8,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="XF1-1k-UHb">
+            <objects>
+                <tabBarController id="Xeu-B6-cRz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rUj-S5-LaM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OOe-YJ-mRE" kind="relationship" relationship="viewControllers" id="CMv-Q6-nbO"/>
+                        <segue destination="bxp-Be-gCe" kind="relationship" relationship="viewControllers" id="oNS-cd-fZ5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y64-0D-l1O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2319" y="121"/>
+        </scene>
+        <!--计算器-->
         <scene sceneID="3Oa-Ft-Nbs">
             <objects>
                 <navigationController id="bxp-Be-gCe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="计算器" id="3oD-sS-XGt"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XX6-ac-ykl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -22,7 +41,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4OG-ES-oKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1286" y="121"/>
+            <point key="canvasLocation" x="-1322" y="-27"/>
         </scene>
         <!--基本运算-->
         <scene sceneID="tne-QT-ifu">
@@ -203,7 +222,7 @@
                                     <action selector="delNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eoY-w4-j5Y"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="right" adjustsFontForContentSizeCategory="YES" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="kO6-1H-1uf">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="right" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="kO6-1H-1uf">
                                 <rect key="frame" x="20" y="113" width="374" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -225,11 +244,6 @@
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="基本运算" id="dNt-Lo-F1Z">
-                        <barButtonItem key="leftBarButtonItem" title="体重计算器" id="4xb-6U-wzt">
-                            <connections>
-                                <segue destination="OOe-YJ-mRE" kind="push" id="TdX-Y8-bB9"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="高级运算" id="Hee-Bc-3Ji">
                             <connections>
                                 <segue destination="E0t-AB-O4Q" kind="push" identifier="SecondScence" id="axf-tC-7Oi"/>
@@ -468,7 +482,7 @@
                                     <action selector="inputKey:" destination="E0t-AB-O4Q" eventType="touchUpInside" id="d1h-hS-MqJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="right" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jiI-Kd-EOB">
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="right" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="jiI-Kd-EOB">
                                 <rect key="frame" x="20" y="115" width="374" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -492,7 +506,7 @@
             </objects>
             <point key="canvasLocation" x="522" y="-511"/>
         </scene>
-        <!--Health View Controller-->
+        <!--体质评估-->
         <scene sceneID="1FQ-Pj-HfS">
             <objects>
                 <viewController id="OOe-YJ-mRE" customClass="HealthViewController" sceneMemberID="viewController">
@@ -600,12 +614,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DsL-yK-rO4">
+                                <rect key="frame" x="47" y="509" width="320" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eGI-Oi-gIg"/>
                         <color key="backgroundColor" red="0.46326185781590012" green="0.77921372536632261" blue="0.7804297805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="体质评估" id="9SZ-dB-Q47"/>
                     <navigationItem key="navigationItem" id="ola-4C-Fje"/>
                     <connections>
+                        <outlet property="Lab1" destination="DsL-yK-rO4" id="MrY-BO-s5M"/>
                         <outlet property="LabAdvice" destination="niO-GS-2al" id="wx0-ch-fvL"/>
                         <outlet property="LabScore" destination="hHK-MU-NOm" id="3wR-Sj-yQb"/>
                         <outlet property="TxtHeight" destination="VL2-rQ-h2b" id="DLU-ea-cy1"/>
@@ -615,10 +639,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78h-IM-4L1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566.66666666666674" y="300"/>
+            <point key="canvasLocation" x="-751" y="844"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

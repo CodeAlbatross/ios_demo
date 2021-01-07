@@ -67,6 +67,7 @@
 
 -(void) viewWillAppear:(BOOL)animated{
     self.txtdisplay.text = self.cal.screen;
+    
 }
 
 - (IBAction)delNumber:(UIButton *)sender {

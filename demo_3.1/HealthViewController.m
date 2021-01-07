@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *LabAdvice;
 @property (weak, nonatomic) IBOutlet UILabel *LabScore;
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
+@property (weak, nonatomic) IBOutlet UILabel *Lab1;
 
 @property(strong, nonatomic) Calculator *cal;
 
@@ -59,6 +60,9 @@
     [self.btn1.layer setMasksToBounds:YES];
     [self.btn1.layer setCornerRadius:12];
     [self.btn1.layer setBorderWidth:1];
+    //绘制边框
+    [self.Lab1.layer setMasksToBounds:YES];
+    [self.Lab1.layer setBorderWidth:1];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField{

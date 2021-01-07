@@ -130,7 +130,11 @@
 
 
 
-
+-(void)cleardisp;//清除结果
+{
+    self.disp = nil;
+    self.screen = nil;
+}
 
 
 
